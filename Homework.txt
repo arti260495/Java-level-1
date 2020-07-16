@@ -1,0 +1,54 @@
+public class Homework {
+    byte a1 = 0;
+    short a2 = 0;
+    int a3 = 0;
+    long a4 = 0;
+    float a5 = 0.1f;
+    double a6 = 0.1;
+    char a7 = 'a';
+    boolean a8 = false;
+    String a9 = "Переменная";
+
+    public static double calculate(double a, double b, double c, double d){
+        return a * ( b + (c / d));
+    }
+
+    public static boolean compare1(int a, int b){
+        return a + b >= 10 && a + b <= 20;
+    }
+
+    public static void compare2(int a){
+        if (a >= 0) System.out.println("число - положительное");
+        else System.out.println("число - отрицательное");
+    }
+
+    public static boolean compare3(int a){
+        return a < 0;
+    }
+
+    public static void hello(String a){
+        System.out.println("Привет, " + a + "!");
+    }
+
+    public static void year(int a){
+        if (((a % 4 == 0)  && (a % 100 != 0)) || a % 400 == 0) System.out.println("високосный год");
+        else System.out.println("невисокосный год");
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(calculate(2,4,3,6));
+
+        System.out.println(compare1(16,5));
+
+        compare2(0);
+
+        System.out.println(compare3(-5));
+
+        hello("Василий");
+
+        year(2019);
+
+    }
+
+}
